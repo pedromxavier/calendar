@@ -416,3 +416,6 @@ TSWLatexianTemp*
 
 ## Personal Calendar
 calendar-pedro.txt
+
+## Output files
+*.pdf
