@@ -16,4 +16,4 @@
 
 ```$python calendar.py file.txt```
 
-- You will obtain two `.pdf` files with the pages to print. Have fun!
+- You will obtain two `.pdf` files with the pages for printing. Have fun!
