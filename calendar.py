@@ -70,9 +70,8 @@ class Calendar:
         self.dates = set()
         if fname is not None:
             with open(fname, 'r') as file:
-                for line in file:
-                    match = self.DATE_RE.match(line)
-                    date = dt.date(self.year, int(match.group(2)), int(match.group(1)))
+                for day, month in self.DATE_RE.findall(file.read()):
+                    date = dt.date(self.year, int(month), int(day))
                     self.dates.add(date)
 
         self.size = self.SIZE
